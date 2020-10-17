@@ -14,6 +14,6 @@ for dataset, dataset_name in [(train_set, 'Zbiór treningowy'), (test_set, 'Zbi�
         print('Ilość wartości null: {}'.format(dataset[label].isna().sum()))
         print('Wartość maksymalna: {}'.format(dataset.max()[label]))
         print('Wartość minimalna: {}'.format(dataset.min()[label]))
-        print('Wartość najczęściej występująca w zbiorze:')
+        print('Wartość najczęściej występująca w zbiorze: {}'.format(dataset[label].mode().max()))
         print()
     print()
